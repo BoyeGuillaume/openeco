@@ -3,6 +3,7 @@ use iced::Theme;
 use crate::app::App;
 
 pub mod app;
+pub mod currency;
 pub mod sim;
 
 fn main() {

@@ -1,10 +1,10 @@
 #[derive(Debug, Clone, Copy)]
-pub struct Money {
+pub struct MonetaryValue {
     pub currency: Currency,
     pub amount: f64,
 }
 
-impl std::fmt::Display for Money {
+impl std::fmt::Display for MonetaryValue {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         self.currency.format(self.amount, f)
     }

@@ -1,5 +1,6 @@
-pub mod agent;
+pub mod actor;
 pub mod assets;
+pub mod systems;
 
 use bevy_ecs::{
     schedule::{ExecutorKind, Schedule},

@@ -1,6 +1,20 @@
 [package]
 name = "openeco"
 version = "0.1.0"
+authors = ["Guillaume Boyé <guillaume314boye@gmail.com>"]
 edition = "2024"
 
 [dependencies]
+bevy_ecs = "0.17.2"
+iced = { version = "0.13.1", features = [
+    "tokio",
+    "debug",
+    "image",
+    "canvas",
+    "svg",
+] }
+itertools = "0.14.0"
+strum = { version = "0.27.2", features = ["derive", "strum_macros"] }
+tokio = { version = "1.48.0", features = ["sync"] }
+tracing-subscriber = "0.3.20"
+uuid = { version = "1.18.1", features = ["v4", "v7", "v6", "v8", "rng"] }
